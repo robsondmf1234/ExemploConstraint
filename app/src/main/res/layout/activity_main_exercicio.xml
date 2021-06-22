@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/viewTitulo"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="@color/coloFundo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_botao_voltar"
+        android:tint="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCappuccino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cappuccino"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewTitulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageRelogio"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_relogio"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageCoracao"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitulo" />
+
+    <ImageView
+        android:id="@+id/imageCoracao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_coracao"
+        app:layout_constraintLeft_toRightOf="@+id/imageRelogio"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRelogio" />
+
+    <TextView
+        android:id="@+id/textMinutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"
+        app:layout_constraintLeft_toLeftOf="@id/imageRelogio"
+        app:layout_constraintRight_toRightOf="@id/imageRelogio"
+        app:layout_constraintTop_toBottomOf="@id/imageRelogio" />
+
+    <TextView
+        android:id="@+id/textTextCoracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="54214"
+        app:layout_constraintLeft_toLeftOf="@id/imageCoracao"
+        app:layout_constraintRight_toRightOf="@id/imageCoracao"
+        app:layout_constraintTop_toBottomOf="@id/imageCoracao" />
+
+    <View
+        android:id="@+id/ViewSeparadora"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMinutos" />
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Uma bebida sempre presente na rotina dos apreciadores de café especial, o cappuccino tem inúmeras versões e receitas. É claro que a versão contemporânea, que é servida nas cafeterias e integra os concursos mundiais de latte art (desenhos decorativos sobre a bebida), leva ingredientes clássicos: espresso e leite, tanto vaporizado quanto em espuma."
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewSeparadora" />
+
+    <TextView
+        android:id="@+id/textIngredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Ingredientes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescricao" />
+
+    <TextView
+        android:id="@+id/textIngrediente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="> 1 dose de expresso"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIngredientes" />
+
+    <TextView
+        android:id="@+id/textIngrediente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="> 100 ml de Leite"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIngrediente1" />
+
+    <TextView
+        android:id="@+id/textIngrediente3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="> 1 colher de chocolate em pó"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIngrediente2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
